@@ -1,0 +1,2614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>894</width>
+    <height>399</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 182, 193, 0), stop:1 rgba(255, 255, 255, 0)),
+                qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 182, 193, 255), stop:1 rgba(255, 255, 255, 255));
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_seven">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>130</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result_show">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>431</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <italic>false</italic>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ClosedHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  background-color: white; /* Белый фон */
+  border: 1px solid black; /* Обводка - черная рамка шириной 1 пиксель */
+border: 2px solid #FFD3E6; /* Розовая обводка шириной 2 пикселя */
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+  color: black; /* Черный цвет текста */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_eight">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>130</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_nine">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>130</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_umnozhit">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+  border-top-right-radius: 15px; /* Радиус скругления верхнего правого угла (только справа) */
+  border-bottom-right-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_four">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_five">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_six">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_minus">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+  border-top-right-radius: 15px; /* Радиус скругления верхнего правого угла (только справа) */
+  border-bottom-right-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_one">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_two">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_three">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_plus">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>310</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-top-right-radius: 15px; /* Радиус скругления верхнего правого угла (только справа) */
+  border-bottom-right-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+  border-bottom-left-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_null">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>310</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_point">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>310</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_x">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>310</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_clear">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>130</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-top-right-radius: 15px; /* Радиус скругления верхнего правого угла (только сверху) */
+  border-top-left-radius: 15px; /* Радиус скругления верхнего левого угла (только сверху) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>←</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ostatok">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-top-left-radius: 15px; /* Радиус скругления верхнего левого угла (только слева) */
+  border-bottom-left-radius: 15px; /* Радиус скругления нижнего левого угла (только слева) */
+  border-bottom-right-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>mod</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sqrt">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-top-left-radius: 15px; /* Радиус скругления верхнего левого угла (только слева) */
+  border-bottom-left-radius: 15px; /* Радиус скругления нижнего левого угла (только слева) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>sqrt</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_stepen">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+border-top-right-radius: 15px; /* Радиус скругления верхнего правого угла (только сверху) */
+  border-top-left-radius: 15px; /* Радиус скругления верхнего левого угла (только сверху) */
+  border-bottom-left-radius: 15px; /* Радиус скругления нижнего левого угла (только слева) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>^</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_percente">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-top-left-radius: 15px; /* Радиус скругления верхнего левого угла (только слева) */
+  border-bottom-left-radius: 15px; /* Радиус скругления нижнего левого угла (только слева) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>%</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_atan">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>atan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_acos">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>130</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-top-right-radius: 15px; /* Радиус скругления верхнего правого угла (только сверху) */
+  border-top-left-radius: 15px; /* Радиус скругления верхнего левого угла (только сверху) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>acos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_log">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>310</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+  border-bottom-right-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+  border-bottom-left-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FF7832, stop: 1 #FF9739);
+  color: black; /* Изменил цвет текста на черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>log</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_asin">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>asin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_cos">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>130</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-top-right-radius: 15px; /* Радиус скругления верхнего правого угла (только сверху) */
+  border-top-left-radius: 15px; /* Радиус скругления верхнего левого угла (только сверху) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>cos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_tan">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>tan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ln">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>310</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+  border-bottom-right-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+  border-bottom-left-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FF7832, stop: 1 #FF9739);
+  color: black; /* Изменил цвет текста на черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ln</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sin">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>sin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_razdelit">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>130</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-top-right-radius: 15px; /* Радиус скругления верхнего правого угла (только справа) */
+  border-bottom-right-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+  border-top-left-radius: 15px; /* Радиус скругления верхнего левого угла (только сверху) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_result">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>30</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid pink;
+  border-top-right-radius: 15px; /* Радиус скругления верхнего правого угла (только справа) */
+  border-bottom-right-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_nine_closedskobka">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>310</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+  border-bottom-right-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+  border-bottom-left-radius: 15px; /* Радиус скругления нижнего правого угла (только справа) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FF7832, stop: 1 #FF9739);
+  color: black; /* Изменил цвет текста на черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_eight_openskobka">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>250</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: pink; /* Изменил цвет фона на розовый */
+  color: black; /* Изменил цвет текста на черный */
+  border: 1px solid gray;
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>(</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="xEdit">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>96</y>
+      <width>445</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+  
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="tabChangesFocus">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>100</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X =</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_eight_openskobka_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton {
+  background-color: pink; /* Малиновый цвет фона кнопки */
+  color: black; /* Белый цвет текста */
+  border: 1px solid gray; /* Серая рамка шириной 1 пиксель */
+
+ 
+}
+
+QPushButton:pressed {
+  background-color: #D8003E; /* Цвет при нажатии (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>AC</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>509</x>
+      <y>6</y>
+      <width>371</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabBar::tab {
+  background: white;
+border: 1px solid #808080;
+  border-radius: 5px;
+  padding: 5px;
+  color: #000000; /* Черный цвет текста для неактивных табов */
+}
+
+QTabBar::tab:selected {
+  background-color: #FFD3E6;
+  border-radius: 5px;
+  padding: 5px;
+  color: #000000; /* Черный цвет текста для активного таба */
+}
+
+
+
+
+</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>plot</string>
+     </attribute>
+     <widget class="QCustomPlot" name="customplot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>6</y>
+        <width>341</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>294</y>
+        <width>101</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Draw</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>288</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>xMin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>yMin</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>288</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>xMax</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>310</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>yMax</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="xBegin">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>287</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */v
+
+}</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-10&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="yBegin">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>312</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */v
+
+}</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;-10&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="xEnd">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>287</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */v
+
+}</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;10&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="yEnd">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>312</y>
+        <width>70</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */v
+
+}</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;10&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>credit</string>
+     </attribute>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>182</x>
+        <y>17</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Период кредитования</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="summ">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>120</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="markdown">
+       <string>0
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сумма кредита</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="period_month">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>40</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="markdown">
+       <string>0
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Процентная ставка</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="percente">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>99</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="markdown">
+       <string>0
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>109</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>80</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Тип выплат</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ежемесячный платеж</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="month_pay">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="markdown">
+       <string>0
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>220</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Общая выплата</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="calc_total_payment">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="markdown">
+       <string>0
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>170</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Переплата по кредиту</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="calc_over_payment">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>190</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="markdown">
+       <string>0
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calculate_credit">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>290</y>
+        <width>341</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="payment_type">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>100</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>OpenHandCursor</cursorShape>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+    color: #000000; /* черный цвет текста */
+    background-color: #ffffff; /* белый цвет фона */
+    text-align: center;
+border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+
+QComboBox::drop-down {
+subcontrol-origin: padding;
+    subcontrol-position: right;
+border-radius: 7px; 
+}
+
+QComboBox::down-arrow {
+    width: 0;
+}
+
+</string>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhNone</set>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>дифференцированный</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>аннуитетный</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>44</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>мес</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>deposit</string>
+     </attribute>
+     <widget class="QTextEdit" name="ttax_amount">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>141</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 1px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="markdown">
+       <string>0
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сумма налога</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Общая выплата</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="final_summ">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>341</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 1px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="markdown">
+       <string>0
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="calc_dep">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>341</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+QPushButton {
+  background-color: #FFD3E6; /* Бледно-розовый цвет */
+  color: black; /* Цвет текста черный */
+  border: 1px solid gray;
+  border-radius: 15px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+}
+
+QPushButton:pressed {
+  background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                    stop: 0 #FFB3D1, stop: 1 #FFC6DB);
+  color: black; /* Цвет текста черный */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>183</x>
+        <y>210</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Начисленные проценты</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="accumulated_interest">
+      <property name="geometry">
+       <rect>
+        <x>179</x>
+        <y>230</y>
+        <width>181</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 1px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="markdown">
+       <string>0
+
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>351</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>46</y>
+         <width>171</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Переодичность выплат</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>66</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>91</y>
+         <width>171</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Капитализация процентов</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>138</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Пополнения в месяц</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>46</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Процентная ставка</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="tax_rate">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>112</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="markdown">
+        <string>0
+
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="withdrawals">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>156</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="markdown">
+        <string>0
+
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="deposit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>22</y>
+         <width>120</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="markdown">
+        <string>0
+
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>138</y>
+         <width>171</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Снятия в месяц</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>2</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Сумма вклада</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="deposits">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>156</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="markdown">
+        <string>0
+
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_21">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>112</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>172</x>
+         <y>2</y>
+         <width>151</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Период размещения</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>91</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Налоговая ставка</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>20</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>мес</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="period_dep">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>22</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="markdown">
+        <string>0
+
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="interest_rate">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>66</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTextEdit {
+  background-color: white; /* Бледно-розовый цвет фона */
+  color: black; /* Черный цвет текста */
+
+  border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <property name="markdown">
+        <string>0
+
+</string>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:8px; margin-bottom:8px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="payout_frequency">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>65</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    color: #000000; /* черный цвет текста */
+    background-color: #ffffff; /* белый цвет фона */
+    text-align: top;
+border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+
+QComboBox::drop-down {
+subcontrol-origin: padding;
+    subcontrol-position: right;
+border-radius: 7px; 
+}
+
+QComboBox::down-arrow {
+    width: 0;
+}
+
+</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>раз в месяц</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>раз в год</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="capitalization">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>110</y>
+         <width>151</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    color: #000000; /* черный цвет текста */
+    background-color: #ffffff; /* белый цвет фона */
+    text-align: top;
+border-radius: 10px; /* Радиус скругления углов (можете настроить по вашему вкусу) */
+  padding: 5px; /* Внутренний отступ вокруг текста (можете настроить по вашему вкусу) */
+}
+
+QComboBox::drop-down {
+subcontrol-origin: padding;
+    subcontrol-position: right;
+border-radius: 7px; 
+}
+
+QComboBox::down-arrow {
+    width: 0;
+}
+
+</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>да</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>нет</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
